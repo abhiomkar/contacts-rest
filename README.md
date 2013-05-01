@@ -1,8 +1,9 @@
 Flask App - Contacts REST API
------------------------------
+=============================
 
 Contact Resource Test
-=====================
+---------------------
+
 
 	# Add New (CREATE)
 	curl -X POST -d 'name=Alex&phone=1234567890&email=bryan@test.com&location=Canada' http://localhost:5000/contact
@@ -21,7 +22,7 @@ Contact Resource Test
 	echo -e '\nContact id: 2 details - with Response Code 200 (if not existed return 404)\n'
 
 AddressBook Resource Test
-=========================
+-------------------------
 
 	curl 'http://localhost:5000/address_book'
 	echo -e '\nList all contacts in Address Book\n'
@@ -33,7 +34,7 @@ AddressBook Resource Test
 	echo -e '\nBangalore contacts only\n'
 
 Content-Negotiation
-===================
+-------------------
 
 	curl -H 'Accept: application/xml' 'http://localhost:5000/contact/2'
 	echo -e 'Contact details of id: 2 in XML format\n'
